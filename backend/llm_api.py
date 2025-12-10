@@ -1,7 +1,7 @@
 import requests
 import os
 
-def poem_to_landscape(poem: str, height: int = 768, width: int = 768, steps: int = 30, guidance: float = 7.5):
+def poem_to_landscape(poem: str):
 
     llm_url = os.getenv("LLM_PROMPT_API_URL")
     api_password = os.getenv("LLM_PROMPT_API_PASSWORD")
