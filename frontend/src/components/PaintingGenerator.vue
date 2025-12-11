@@ -86,7 +86,7 @@ export default {
             await new Promise(r => setTimeout(r, 500));
 
             try {
-                const res = await generatePainting(item.text);
+                const res = await generatePainting(this.items[index].text);
                 this.items[index].image = `data:image/png;base64,${res.data.image}`;
             } catch (err) {
                 console.error(err);
